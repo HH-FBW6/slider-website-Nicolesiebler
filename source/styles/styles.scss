@@ -1,1 +1,182 @@
 @import "_reset";
+html{
+    scroll-behavior: smooth;
+}
+body {
+    overflow: hidden; 
+  }
+.slider{
+    p{
+        color: white;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+        font-size: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .btn{
+        background-color: white;
+        width: 160px;    
+        height: 45px;
+        color: rgb(46,52,59);
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 18px;
+    }
+    .btn:hover{
+        background-color: gray;
+        color: white;
+    }
+    .btn:active{
+        transform: translate();
+    }
+    .btn-dark{
+        background-color: gray;
+    }
+    .btn-dark:hover{
+        background-color:white;
+        color: rgb(46,52,59);
+    }
+}
+#slider-1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: RGB(75,123,75);
+        img{
+            position: absolute;
+            top: 20vh;
+            left: 35vw;
+        }
+        h1{
+            position: absolute;
+            top: 7vh;
+            left: 25vw;
+            animation-name: moveh1;
+            animation-duration: 3s;
+        }
+        p{
+            position: absolute;
+            top: 75vh;
+            left: 1vw;
+            animation-name: movep;
+            animation-duration: 3s;
+        }
+        .btn{
+            position: absolute;
+            top: 88vh;
+            left: 46vw;
+        }
+
+}
+@keyframes moveh1{
+        from{
+            top: -300vh;
+        }
+        to{
+            top: 7vh;
+        }
+}
+@keyframes movep{
+    from{
+        left: -3000vh;
+    }
+    to{
+        left: 1vh;
+    }
+}
+
+
+#slider-2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: RGB(118,90,176);
+    img{
+        position: absolute;
+        top: 20vh;
+        left: 35vw;
+    }
+    h1{
+        position: absolute;
+        top: 7vh;
+        left: 41vw;
+    }
+    p{
+        position: absolute;
+        top: 75vh;
+        left: 1vw;
+    }
+    .btn{
+        position: absolute;
+        top: 88vh;
+        left: 50vw;
+    }
+    .btn-dark{
+        position: absolute;
+        top: 88vh;
+        left: 40vw;
+    }
+}
+#slider-3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: RGB(0, 159, 212);
+    img{
+        position: absolute;
+        top: 20vh;
+        left: 35vw;
+    }
+    h1{
+        position: absolute;
+        top: 7vh;
+        left: 41vw;
+    }
+    p{
+        position: absolute;
+        top: 75vh;
+        left: 1vw;
+    }
+    .btn{
+        position: absolute;
+        top: 88vh;
+        left: 50vw;
+    }
+    .btn-dark{
+        position: absolute;
+        top: 88vh;
+        left: 40vw;
+    }
+}
+#slider-4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: RGB(147,147,147);
+    img{
+        position: absolute;
+        top: 20vh;
+        left: 35vw;
+    }
+    h1{
+        position: absolute;
+        top: 7vh;
+        left: 41vw;
+    }
+    p{
+        position: absolute;
+        top: 75vh;
+        left: 1vw;
+    }
+    .btn{
+        position: absolute;
+        top: 88vh;
+        left: 46vw;
+    }
+}
